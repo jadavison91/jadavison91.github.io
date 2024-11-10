@@ -1,95 +1,51 @@
 /* styles.css */
 
-/* Basic Reset */
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-    margin: 0;
+/* Container Layout */
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.content-wrapper {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+}
+
+/* Sidebar (Navigation) Styling */
+aside {
+    width: 250px;
+    background-color: #444;
+    color: #fff;
+    padding: 20px;
+    flex-shrink: 0; /* Prevents sidebar from shrinking */
+}
+
+aside nav ul {
+    list-style: none;
     padding: 0;
 }
 
-/* Body Style */
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background-color: #f9f9f9;
-    padding: 20px;
+aside nav ul li {
+    margin: 15px 0;
 }
 
-/* Header Style */
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 20px;
-    text-align: center;
-}
-
-header h1 {
-    font-size: 2em;
-    margin: 0;
-}
-
-/* Navigation Style */
-nav {
-    background-color: #444;
-    margin-top: 10px;
-    padding: 10px 20px;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-}
-
-nav ul li {
-    display: inline;
-}
-
-nav ul li a {
+aside nav ul li a {
     color: #fff;
     text-decoration: none;
-    padding: 8px 15px;
+    padding: 8px;
+    display: block;
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
 
-nav ul li a:hover {
+aside nav ul li a:hover {
     background-color: #666;
 }
 
-/* Main Content Style */
+/* Main Content Styling */
 main {
-    margin-top: 20px;
+    flex: 1; /* Makes the main content take up remaining space */
     padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-main h2 {
-    color: #333;
-    margin-bottom: 15px;
-}
-
-main section {
-    margin-bottom: 20px;
-}
-
-main section h3 {
-    color: #444;
-    margin-bottom: 10px;
-}
-
-/* Footer Style */
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    margin-top: 20px;
-    font-size: 0.9em;
-}
+    backgro

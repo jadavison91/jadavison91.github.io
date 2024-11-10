@@ -1,3 +1,4 @@
+<!-- _layouts/default.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,13 +8,20 @@
     <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
 </head>
 <body>
-    {% include header.html %}
-    {% include nav.html %}
-    
-    <main>
-        {{ content }}
-    </main>
-    
-    {% include footer.html %}
+    <div class="container">
+        {% include header.html %}
+        
+        <div class="content-wrapper">
+            <aside>
+                {% include nav.html %}
+            </aside>
+            
+            <main>
+                {{ content }}
+            </main>
+        </div>
+        
+        {% include footer.html %}
+    </div>
 </body>
 </html>
