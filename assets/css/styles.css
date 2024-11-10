@@ -1,9 +1,23 @@
-/* styles.css */
+/* Importing Google Fonts (Example with Roboto) */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Basic Reset */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body Style */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
     color: #333;
-    display: flex;
+    background-color: #f9f9f9;
+    padding: 20px;
 }
 
 /* Container Layout */
@@ -16,21 +30,15 @@ body {
 .content-wrapper {
     display: flex;
     flex: 1;
-    overflow: hidden;
 }
 
 /* Sidebar (Navigation) Styling */
 aside {
-    width: 220px;
-    background-color: #333;
+    width: 250px; /* Fixed width to prevent overlap */
+    background-color: #444;
     color: #fff;
-    padding-top: 20px;
-    position: fixed;
-    height: 100%;
-    top: 0;
-    left: 0;
+    padding: 20px;
     flex-shrink: 0; /* Prevents sidebar from shrinking */
-    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
 }
 
 aside nav ul {
@@ -39,7 +47,7 @@ aside nav ul {
 }
 
 aside nav ul li {
-    padding: 15px 20px;
+    margin: 15px 0;
 }
 
 aside nav ul li a {
@@ -47,13 +55,23 @@ aside nav ul li a {
     text-decoration: none;
     padding: 8px;
     display: block;
-    font-size: 1.1em;
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
 
 aside nav ul li a:hover {
     background-color: #666;
+}
+
+/* Main Content Styling */
+main {
+    flex: 1; /* Allows main to take up remaining space */
+    padding: 20px; /* Internal padding within main content */
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow-y: auto; /* Allows scrolling if content overflows */
+    margin-left: 30px; /* Adds space between the sidebar and content */
 }
 
 /* Content Text Styling */
@@ -98,4 +116,26 @@ main ul {
 
 main ul li {
     margin-bottom: 10px;
+}
+
+/* Header and Footer */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2em;
+    margin: 0;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.9em;
+    margin-top: 20px;
 }
