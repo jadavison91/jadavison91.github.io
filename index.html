@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phantom Grid - Sim Racing Stories</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+            display: flex;
+        }
+        nav {
+            width: 220px;
+            background-color: #333;
+            color: white;
+            padding-top: 20px;
+            position: fixed;
+            height: 100%;
+            top: 0;
+            left: 0;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            padding: 15px 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1em;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+		nav ul ul {
+			padding-left: 20px; /* Adds indentation to the sub-menu */
+		}
+		nav ul ul li {
+			font-size: 0.9em; /* Optional: slightly smaller font for sub-menu items */
+		}
+        .content {
+            margin-left: 240px;
+            padding: 20px;
+            max-width: 1000px;
+            margin: 20px auto;
+        }
+        header {
+            padding: 60px 20px;
+            color: black;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+        header p {
+            font-size: 1.2em;
+            margin: 10px 0 20px;
+        }
+        section {
+            margin-bottom: 40px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .section-title {
+            font-size: 2em;
+            margin-bottom: 15px;
+            color: #333;
+            border-bottom: 2px solid #eaeaea;
+            padding-bottom: 5px;
+        }
+        .text-content {
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Left Navigation -->
+    <nav>
+        <ul>
+            <li><a href="./home.html">GT3 Season</a></li>
+			<ul>
+				<li><a href="./standings.html">Standings</a></li>
+				<li><a href="./schedule.html">Schedule</a></li>
+				<li><a href="./roster.html">Driver Roster</a></li>
+			</ul>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="content">
+        
+        <header>
+            <h1>Phantom Grid</h1>
+            <p>The Ultimate Intersection of Sim Racing, Technology, and Championship Storytelling</p>
+            <img src="./resources/phantom_grid.png" alt="Phantom Grid Logo" style="width:100%; max-width:300px; margin:20px 0;">
+        </header>
+
+        <!-- Introduction Section -->
+        <section class="intro" id="home">
+            <h2 class="section-title">Welcome to Phantom Grid</h2>
+            <p class="text-content">Welcome to Phantom Grid! Here, sim racing meets the future of storytelling. We capture the drama and intensity of real-season racing through cutting-edge technology and AI-powered narratives. Experience the thrill of every race, every rivalry, and every championship arc.</p>
+        </section>
+
+        <!-- Explore Phantom Grid Section -->
+        <section class="explore">
+            <h2 class="section-title">Explore Phantom Grid</h2>
+            <div class="text-content">
+                <p><strong>Race Recaps & Highlights</strong> - Revisit the most exciting moments from each race, brought to life with AI-enhanced analysis and insights. Every lap, every pass, and every pit stop counts.</p>
+                <p><strong>Season Narratives</strong> - Follow a season-long story arc where drivers face off, teams build rivalries, and champions emerge. Dive into immersive backstories and recaps that capture the competitive spirit.</p>
+                <p><strong>AI-Powered Insights</strong> - Using ChatGPT, we transform race data into dynamic narratives, highlighting key moments, strategies, and rivalries that make each season memorable.</p>
+                <p><strong>Engineering & Tech Behind the Scenes</strong> - Discover the workflows, coding, and tech tools that power Phantom Grid. From data capture to storytelling, learn how the magic happens.</p>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about">
+            <h2 class="section-title">About Phantom Grid</h2>
+            <p class="text-content">Phantom Grid is the brainchild of a passionate sim racer, engineer, and developer. Built from a love of racing and innovation, this site is a playground for blending technology with the excitement of motorsport.</p>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact">
+            <h2 class="section-title">Connect with Us</h2>
+            <p class="text-content">Questions? Collaborations? Connect with Phantom Grid to be part of the journey.</p>
+            <p><a href="mailto:contact@phantomgrid.com">contact@phantomgrid.com</a></p>
+        </section>
+
+    </div>
+
+</body>
+</html>
