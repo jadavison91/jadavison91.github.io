@@ -19,6 +19,28 @@ aside {
     flex-shrink: 0; /* Prevents sidebar from shrinking */
 }
 
+aside nav ul {
+    list-style: none;
+    padding: 0;
+}
+aside nav ul li {
+    padding: 15px 20px;
+}
+aside nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+aside nav ul li a:hover {
+    text-decoration: underline;
+}
+aside nav ul ul {
+    padding-left: 20px; /* Adds indentation to the sub-menu */
+}
+aside nav ul ul li {
+    font-size: 0.9em; /* Optional: slightly smaller font for sub-menu items */
+}
+
 /* Main Content Styling */
 main {
     flex: 1; /* Allows main to take up remaining space */
