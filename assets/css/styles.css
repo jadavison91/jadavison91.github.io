@@ -192,6 +192,9 @@ tr:nth-child(even) {
     padding: 8px; /* Optional: Add padding to cells */
     text-align: center; /* Optional: Control text alignment */
 }
+.borderless-table tr:nth-child(even) {
+    background-color: white;
+}
 
 /* Standings Styling */
 .highlight {
