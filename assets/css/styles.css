@@ -19,6 +19,18 @@ body {
     flex: 1;
 }
 
+.driver-card {
+    display: flex; align-items: flex-start; padding: 20px; border: 1px solid #ccc;
+    border-radius: 10px; background-color: #fff; width: 80%; max-width: 800px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.driver-photo { margin-right: 20px; }
+.driver-photo img { width: 150px; height: auto; border-radius: 8px; }
+.driver-details { max-width: 600px; }
+.driver-details h2 { font-size: 1.5em; margin: 0; color: #333; }
+.driver-details h2 span { font-size: 0.8em; color: #555; font-weight: normal; }
+.driver-details p { margin: 5px 0; color: #666; line-height: 1.5; }
+.driver-details .team { font-weight: bold; color: #000; margin-bottom: 8px; }
+
 /* Sidebar (Navigation) Styling */
 aside {
     width: 250px; /* Fixed width to prevent overlap */
@@ -89,6 +101,50 @@ main section h3 {
 main section p {
     font-size: 1em;
     color: #666;
+}
+
+main driver-card {
+    display: flex; 
+    align-items: flex-start; 
+    padding: 20px; 
+    border: 1px solid #ccc;
+    border-radius: 10px; 
+    background-color: #fff; 
+    width: 80%; 
+    max-width: 800px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+main driver-photo { 
+    margin-right: 20px; 
+}
+
+main driver-photo img { 
+    width: 150px; 
+    height: auto; 
+    border-radius: 8px; 
+}
+
+main driver-details { 
+    max-width: 600px; 
+}
+
+main driver-details h2 { 
+    font-size: 1.5em; 
+    margin: 0; 
+    color: #333; 
+}
+
+main driver-details h2 span { 
+    font-size: 0.8em; 
+    color: #555; 
+    font-weight: normal; 
+}
+
+main driver-details p { 
+    margin: 5px 0; 
+    color: #666; 
+    line-height: 1.5; 
 }
 
 /* List Styling */
