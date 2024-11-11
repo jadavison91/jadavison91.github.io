@@ -137,19 +137,6 @@ main section p {
     line-height: 1.0; 
 }
 
-/* Special Table Formatting */
-.borderless-table {
-    border-collapse: collapse;
-    border: none;
-    width: 100%; /* Optional: Set the table width */
-}
-
-.borderless-table td, .borderless-table th {
-    border: none;
-    padding: 8px; /* Optional: Add padding to cells */
-    text-align: center; /* Optional: Control text alignment */
-}
-
 /* Results Styling */
 .podium {
     display: flex;
@@ -191,6 +178,19 @@ th {
 }
 tr:nth-child(even) {
     background-color: #f2f2f2;
+}
+
+/* Special Table Formatting */
+.borderless-table {
+    border-collapse: collapse;
+    border: none;
+    width: 100%; /* Optional: Set the table width */
+}
+
+.borderless-table td, .borderless-table th {
+    border: none;
+    padding: 8px; /* Optional: Add padding to cells */
+    text-align: center; /* Optional: Control text alignment */
 }
 
 /* Standings Styling */
