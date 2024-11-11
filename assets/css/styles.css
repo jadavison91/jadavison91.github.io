@@ -103,7 +103,9 @@ main section p {
     color: #666;
 }
 
-main driver-card {
+/* Driver Card Styles */
+
+.driver-card {
     display: flex; 
     align-items: flex-start; 
     padding: 20px; 
@@ -115,33 +117,33 @@ main driver-card {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-main driver-photo { 
+.driver-photo { 
     margin-right: 20px; 
 }
 
-main driver-photo img { 
+.driver-photo img { 
     width: 150px; 
     height: auto; 
     border-radius: 8px; 
 }
 
-main driver-details { 
+.driver-details { 
     max-width: 600px; 
 }
 
-main driver-details h2 { 
+.driver-details h2 { 
     font-size: 1.5em; 
     margin: 0; 
     color: #333; 
 }
 
-main driver-details h2 span { 
+.driver-details h2 span { 
     font-size: 0.8em; 
     color: #555; 
     font-weight: normal; 
 }
 
-main driver-details p { 
+.driver-details p { 
     margin: 5px 0; 
     color: #666; 
     line-height: 1.5; 
