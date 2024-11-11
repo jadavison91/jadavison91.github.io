@@ -145,8 +145,9 @@ main section p {
 
 .driver-details p { 
     margin: 5px 0; 
-    color: #666; 
-    line-height: 1.5; 
+    color: #666;
+    font-size: 0.9em; 
+    line-height: 1.0; 
 }
 
 /* List Styling */
