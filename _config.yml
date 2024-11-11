@@ -1,0 +1,37 @@
+# Site settings
+title: "Phantom Grid"
+description: "A passion project to capture the thrill of sim racing championships"
+baseurl: "" # Leave blank for GitHub Pages root
+url: "https://jadavison91.github.io"
+
+# Build settings
+markdown: kramdown
+theme: minima # Optional: GitHub Pages provides the minima theme by default. Remove if using custom styles.
+permalink: pretty # Removes .html extensions from URLs (e.g., /about/ instead of /about.html)
+
+# Ensure Jekyll includes HTML files for processing
+include:
+  - "*.html"      # Ensures Jekyll processes all HTML files in the root
+  - "_includes"   # Ensures Jekyll includes the _includes folder
+  - "_layouts"    # Ensures Jekyll includes the _layouts folder
+  - "_assets"     # (Optional) Include additional custom assets if needed
+  - "assets"      # Include standard assets folder for CSS, JS, etc.
+
+# Exclude specific files or folders (optional)
+# Add any folders or files you don’t want Jekyll to process or publish
+exclude:
+  - "README.md"   # Common to exclude README files
+  - "Gemfile"
+  - "Gemfile.lock"
+
+# Defaults for Front Matter (optional)
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+
+# Theme settings (optional if using minima theme)
+minima:
+  skin: "classic" # Optional: Choose classic or dark mode for minima theme
