@@ -43,7 +43,13 @@ aside nav ul ul {
     padding-left: 20px; /* Adds indentation to the sub-menu */
 }
 aside nav ul ul li {
-    font-size: 0.9em; /* Optional: slightly smaller font for sub-menu items */
+    font-size: 0.75em; /* Optional: slightly smaller font for sub-menu items */
+}
+aside nav ul ul ul {
+    padding-left: 40px; /* Adds indentation to the sub-menu */
+}
+aside nav ul ul ul li {
+    font-size: 0.75em; /* Optional: slightly smaller font for sub-menu items */
 }
 
 /* Main Content Styling */
